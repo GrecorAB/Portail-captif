@@ -6,36 +6,56 @@
 	body {
 	background-position: center;
 	background-repeat: no-repeat;
-    height: 900px;
+    height: auto;
+	}
+
+	.connexion{
+		background-color: rgba(255, 255, 255, 0.2);
+		border-right: 5px solid red;
+		border-top: 5px solid white;
+		border-left: 5px solid blue;
+		border-bottom: 5px solid white;
+
 	}
 </style>
+
  <p align="center"> <font size="+2"><B>Bienvenu sur le r&eacute;seau wifi de la f&eacute;d&eacute;ration fran&ccedil;aise de football.</B><BR></p></font>
+ <div style="text-align: center; margin-top: 20px;">
 <B>* Ce r&eacute;seau est prot&eacute;g&eacute; et enti&egrave;rement s&eacute;curis&eacute; par la distribution linux PFsense.</B><BR>
+
  <B><font color="red">Ce r&eacute;seau est un r&eacute;seau priv&eacute; dont l'acc&egrave;s est strictement r&eacute;glement&eacute; et surveill&eacute; par un administrateur.<BR>
-Toute utilisation ill&eacute;gale ou frauduleuse de cette connection seras enregistr&eacute;e et signal&eacute;e, pouvant conduire a des sanctions p&eacute;nales.</font></B><BR>
+Toute utilisation ill&eacute;gale ou frauduleuse de cette connection seras enregistr&eacute;e et signal&eacute;e, pouvant conduire a des sanctions p&eacute;nales.</font></B><BR></div>
 <BR>
 <BR>
 <BR>
 <BR>
 <BR>
-<BR>
-<img src="FIFA-Logo.png"" align="right" height="300px" width="300px" >
-<img src="FFF.png"" align="right" height="300px" width="300px" >
+<img src="FIFA-Logo.png"" align="right" height="30%" width="18%" style="margin-right: 5%; margin-top: 5%;">
+<img src="FFF.png"" align="left" height="30%" width="15%" style="margin-left: 5%; margin-top: 5%;">
 <center>
-<B><p align="center"><h2>Connection:</B><BR> 
+<div class="connexion" style="height: 300px; width: 500px; ">
+<B><p align="center"><h2>Connection:</B><BR>
+
 <BR>
  
 <form method="post" action="$PORTAL_ACTION$">
-&nbsp;&nbsp;&nbsp;&nbsp;Utilisateur :   <input name="auth_user" type="text"><BR>
+	<div style="margin-top: 20px;">
+	<label>
+&nbsp;&nbsp;&nbsp;&nbsp;Utilisateur :  </label> <input name="auth_user" type="text"></div><BR>
+
+<div>
+<label>
+Mot de passe : </label>  <input name="auth_pass" type="password"><BR>
+   <input name="redirurl" type="hidden" value="$PORTAL_REDIRURL$"></div>
 <BR>
-Mot de passe :   <input name="auth_pass" type="password"><BR>
-   <input name="redirurl" type="hidden" value="$PORTAL_REDIRURL$">
-<BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
-<input name="accept" type="submit" value="Continuer"></center>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+
+<div><input name="accept" type="submit" value="Continuer" style="height: 25px; width: 30%;"></div></center>
 </h2>
 
 </form>
+</div> 
 </center>
  
 </BODY>
